@@ -1,2 +1,2 @@
-# AdventOfCode2022
-To run make sure you have cargo installed on your computer and run `cargo run` command
+
+Because code is refering to the relative file `input.txt` make sure to run `cargo run` command inside the src folder
