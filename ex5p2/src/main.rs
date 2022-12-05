@@ -63,8 +63,8 @@ fn main() {
             //println!("{},{},{}",x,y,z);
             
             while x > 0{
-                let mut letter = stacks[(y-1) as usize].chars().nth(0).unwrap();
-                stacks[(y - 1) as usize].remove(0);
+                let mut letter = stacks[(y-1) as usize].chars().nth((x-1) as usize).unwrap();
+                stacks[(y - 1) as usize].remove((x-1) as usize);
                 stacks[(z - 1) as usize ].insert(0, letter);
                 x-=1;
             }   
