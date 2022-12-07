@@ -1,5 +1,4 @@
 use std::fs;
-use std::io;
 use std::string::String;
 fn main() {
     let file_contents = fs::read_to_string("../input.txt")
@@ -16,7 +15,7 @@ fn main() {
                 for a in 0..13{
                     for b in 0..13{
                         if a != b{
-                            if (analysedstring.chars().nth(a) ) == (analysedstring.chars().nth(b)){
+                            if (analysedstring.chars().nth(a)) == (analysedstring.chars().nth(b)){
                                 correct = false;
                             }
                         }
